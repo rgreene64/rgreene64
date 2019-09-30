@@ -1,0 +1,392 @@
+body {
+	font-family: Times New Roman;
+	font-size: 8pt;
+	background-color: black;
+}
+
+h1 {
+	color: white;
+	font-size: 20pt;
+}
+
+h2 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+.introduction {
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.decisions {
+	text-align: center;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.button {
+	background-color: grey;
+	border: 2px white solid;
+	opacity: 1;
+	transition: 0.3s;
+	width: 400px;
+	height: 100px;
+	margin-left: 10px;
+}
+
+.button:hover { opacity: 0.6} 
+
+@keyframes fadeIn {
+	from { opacity: 0;}
+    to { opacity: 1; }
+}
+.fade {
+	animation-name: fadeIn;
+	animation-duration: 5s;
+}
+.torchleft {
+}
+.torchright {
+}
+.torchrightimg {
+max-width: 100%;
+height: 100%;
+margin-top: -500px;
+float: right;
+border-radius: 100%;
+}
+.torchleftimg {
+max-width: 100%;
+height: 100%;
+margin-top: -500px;
+float: left;
+border-radius: 100%;
+}
+
+.gameovermessage {
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+
+}
+.gameover{
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	animation-name: fadeIn;
+	animation-duration: 10s;
+	font-size: 100pt;
+	color: red;
+
+}
+.victory{
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	animation-name: fadeIn;
+	animation-duration: 10s;
+	font-size: 100pt;
+	color: yellow;
+
+}
+
+.drowned {
+	background-image: url("drowning.jpg");
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	height: 180px;
+	width: 500px;
+}
+
+.forestdeath {
+	background-image: url("forestdeath.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	height: 350px;
+	width: 1000px;
+}
+.dragonfire {
+	background-image: url("firedeath.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	height: 300px;
+	width: 500px;
+}
+.eaten {
+	background-image: url("eaten.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	height: 330px;
+	width: 700px;
+}
+
+
+#map {
+	width: 400px;
+	height: 400px;
+	background-image: url("dragonmap.gif");
+	background-repeat: no-repeat;
+	transition: transform 2s;
+	transition-delay: 1s;
+	transform: rotate(360deg);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: -25px;
+}
+	
+#restart{
+	position: relative;
+	top: 60%;
+	left: 47%;
+	border-radius: 30px;
+	animation-name: fadeIn;
+	animation-duration: 11s;
+	background-color: black;
+	border: 1px double red ;
+}
+
+#restart:hover{
+	background-color: red;
+	border-radius: 30px;
+	transition: 1s;
+
+}
+
+
+#restart a{
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 20px;
+}
+#restart a:hover{
+	color: white;
+}
+
+#questions{
+	position: absolute;
+	left: 50em;
+}
+#question{
+	font-size: 50px;
+}
+#questions a img{
+	width:50px;
+	height:50px;
+}
+
+.ready{
+	position: absolute;
+	left: 50em;
+	top: 25em;
+
+
+}
+
+.ready button{
+	background-color: black;
+	border-radius: 70px;
+	border-color: red;
+	animation-name: fadeIn;
+	animation-duration: 4s;
+}
+.ready a{
+	text-decoration: none;
+	color: red;
+	font-size: 25px;
+	padding: 10px;
+
+}
+.ready a:hover{
+	color: white;
+	transition: 1s;
+}
+
+
+
+.not-ready{
+	position: absolute;
+	left: 60em;
+	top: 25em;
+
+}
+.not-ready button{
+	background-color: black;
+	border-radius: 70px;
+	border-color: red;
+	animation-name: fadeIn;
+	animation-duration: 4s;
+}
+
+
+
+
+.not-ready a{
+	text-decoration: none;
+	color: red;
+	font-size: 25px;
+	padding: 10px;
+}
+
+.not-ready a:hover{
+	color: white;
+	transition: 1s;
+}
+
+#answers{
+	display: inline-grid;
+	position: absolute;
+	left: 51em;
+}
+#answers button{
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	background-color: black;
+	border-radius: 70px;
+	border-color: red;
+	margin: 10px;
+}
+#answers a{
+	padding: 15px;
+	color: red;
+	font-size: 25px;
+	text-decoration: none;
+
+}
+#answers button:hover{
+
+	color: white;
+	background-color: #EA6072;
+	
+}
+
+#answers a:hover{
+	color: white;
+}
+
+
+.wrong{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 100px;
+}
+
+#answers2{
+	display: inline-grid;
+	position: absolute;
+	left: 48em;
+}
+#answers2 button{
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	background-color: black;
+	border-radius: 70px;
+	border-color: red;
+	margin: 10px;
+}
+#answers2 a{
+	padding: 15px;
+	color: red;
+	font-size: 25px;
+	text-decoration: none;
+
+}
+#answers2 button:hover{
+
+	color: white;
+	background-color: #EA6072;
+	
+}
+
+#answers2 a:hover{
+	color: white;
+}
+
+
+.king{
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 30em;
+	right: 30em;
+	top: 17em;
+	bottom: 40px;
+
+}
+
+.king img{
+	float: center;
+}
+
+
+.gameover button{
+	background-color: grey;
+	border-radius: 70px;
+	border-color: white;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+  	transition: all 0.3s ease-in;
+}
+
+
+.gameover button:hover{
+	 
+	transform: scale3d(1.2,1.2,5);
+}
+
+.gameover a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+
+}
+
+.gameover a:hover{
+	color: white;
+	transition: 1s;
+}
+
+.victory2 h1{
+	text-align: center;
+	color: white;
+	font-size: 150px;
+
+}
+.introduction button{
+	background-color: grey;
+	border-radius: 70px;
+	border-color: white;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+  	transition: all 0.3s ease-in;
+}
+.introduction button a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.introduction button:hover{
+
+	transform: scale3d(1.2,1.2,5);
+}
+
